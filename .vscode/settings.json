@@ -1,0 +1,11 @@
+{
+    "go.goroot": "/Users/alan.xu/.local/share/mise/installs/go/1.22.7",
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "/Users/alan.xu/.local/share/mise/shims/node"
+    },
+    "go.alternateTools": {
+        "go": "/Users/alan.xu/.local/share/mise/shims/go",
+        "dlv": "/Users/alan.xu/.local/share/mise/shims/dlv",
+        "gopls": "/Users/alan.xu/.local/share/mise/shims/gopls"
+    }
+}
