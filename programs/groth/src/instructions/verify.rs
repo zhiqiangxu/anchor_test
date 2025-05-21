@@ -2,7 +2,8 @@ use anchor_lang::prelude::*;
 
 #[derive(AnchorSerialize, AnchorDeserialize)]
 pub struct VerifyArgs {
-    pub key: Vec<u8>,
-    pub hash: Vec<u8>,
-    pub proof: Vec<u8>,
+    pub public_inputs: Vec<[u8; 32]>,
+    pub proof_a: [u8;64],
+    pub proof_b: [u8;128],
+    pub proof_c: [u8;64],
 }
