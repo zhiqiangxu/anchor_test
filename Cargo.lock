@@ -955,7 +955,10 @@ name = "groth"
 version = "0.1.0"
 dependencies = [
  "anchor-lang",
+ "ark-bn254 0.5.0",
+ "ark-serialize 0.5.0",
  "groth16-solana",
+ "solana-bn254",
 ]
 
 [[package]]
