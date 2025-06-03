@@ -32,21 +32,6 @@ pub mod groth {
     use super::*;
 
     pub fn verify(ctx: Context<Verify>, args: VerifyArgs) -> Result<()> {
-        let mut args = args;
-        for b in [
-            31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 22, 21,
-            20, 19, 18, 17, 16, 15, 14, 13, 12, 12,
-        ] {
-            let mut bytes: [u8; 32] = [0; 32];
-            bytes[31] = b as u8;
-            args.public_inputs.push(bytes);
-        }
-        // msg!("proof_a:{}", to_hex_string(&args.proof_a));
-        // msg!("proof_b:{}", to_hex_string(&args.proof_b));
-        // msg!("proof_c:{}", to_hex_string(&args.proof_c));
-        // for (i, input) in args.public_inputs.iter().enumerate() {
-        //     msg!("pi:{}, input:{:?}", i, &args.public_inputs[i]);
-        // }
         msg!("step 1");
         let pi = args.public_inputs.try_into().unwrap();
         msg!("step 2");
